@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>
+      下町旅館
+    </title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <a class="navbar-brand" href="./">下町旅館</a>
+      <ul class="ms-auto navbar-nav">
+        <li class="nav-item">
+          <a href="https://google.com">
+            <button class="m-1 btn btn-outline-primary">会員登録</button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://google.com">
+            <button class="m-1 btn btn-outline-primary">ログイン</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="top-content-wrapper container-fluid">
+      <div class="container-fluid hotel-image-wrapper">
+        <img class="container-lg hotel-image" src="../images/hotel_top.jpg">
+      </div>
+      <p class="catchphrase">やすらぎのひとときをあなたに…</p>
+      <button class="btn btn-warning reservation-button">予約へ</button>
+    </div>
+    <footer class="footer container-fluid">
+      <p>下町旅館</p>
+    </footer>
+  </body>
+
+  <style>
+    .top-content-wrapper {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background-color: rgb(200, 200, 200);
+    }
+    .catchphrase {
+      display: block;
+      position: absolute;
+      margin-left: 50px;
+      top: 20px;
+      background-color: rgb(200, 200, 200, 0.5);
+      color: white;
+      font-size: 5rem;
+    }
+    .hotel-image-wrapper {
+      z-index: 1;
+      text-align: center;
+    }
+    .reservation-button {
+      z-index: 2;      
+      position: absolute;
+      padding: 50px 200px;
+      font-size: 3rem;
+      right: 20px;
+      bottom: 10%;
+    }
+    .footer{
+      text-align: center;
+    }
+    @media (max-width: 767.98px) {
+      .catchphrase {
+        display: block;
+        position: absolute;
+        margin-left: 50px;
+        top: 20px;
+        background-color: rgb(200, 200, 200, 0.5);
+        color: white;
+        font-size: 2rem;
+      }
+
+      .reservation-button {
+        z-index: 2;
+        position: absolute;
+        padding: 20px 70px;
+        font-size: 2rem;
+        bottom: 5%;
+        width: 60%;
+        right: 20%;
+        left: 20%;        
+      }
+    }
+  </style>
+</html>
